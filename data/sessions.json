@@ -1,0 +1,55 @@
+{
+  "session_o4065mdma9h": {
+    "createdAt": "2026-09-24T03:32:52.051Z",
+    "expiresAt": "2026-10-24T03:32:52.051Z",
+    "id": "session_o4065mdma9h",
+    "lastActiveAt": "2026-09-24T03:36:02.693Z",
+    "messages": [],
+    "userIp": "222.165.181.101",
+    "contactInfo": "sampath bandara|wykNr6SIROUT1oewochr5H8AdP22|https://lh3.googleusercontent.com/a/ACg8ocK7qnrpLxdmtMWSYJn_e6HzVnB7P_7DOlPclw6s2VLCtORE7g=s96-c|kasubsampath@gmail.com",
+    "contactType": "google",
+    "userEmail": "kasubsampath@gmail.com"
+  },
+  "session_realtime_test_1790223566439": {
+    "id": "session_realtime_test_1790223566439",
+    "createdAt": "2026-09-24T04:19:30.706Z",
+    "lastActiveAt": "2026-09-24T04:19:30.706Z",
+    "expiresAt": "2026-10-24T04:19:30.706Z",
+    "messages": [
+      {
+        "id": "msg_0jjgfmtty",
+        "role": "user",
+        "content": "මගේ සෞඛ්‍ය ගැටලුවකට උපදෙස් අවශ්‍යයි",
+        "timestamp": "2026-09-24T04:19:30.706Z"
+      },
+      {
+        "id": "msg_5zqimj0fo",
+        "role": "model",
+        "content": "ආයුබෝවන්! සුවසැත AI මිතුරා සහ උපදේශක විදිහට, ඔයාගේ සෞඛ්‍ය ගැටලුවට උපදෙස් දෙන්න මම සූදානම්.\n\nකිසිම පැකිලීමකින් තොරව ඔයාගේ ගැටලුව පැහැදිලිව මට කියන්න පුළුවන්. මම මෙතන ඉන්නේ ඔයාට උදව් කරන්න, සම්පූර්ණයෙන්ම රහසිගතව සහ කිසිම විනිශ්චයකින් තොරව.\n\nඔයාට තියෙන ගැටලුව ගැන විස්තර කරන්න. එතකොට මට පුළුවන් විද්‍යාත්මකව නිවැරදි, විශ්වාසදායක තොරතුරු සහ උපදෙස් ලබා දෙන්න.",
+        "timestamp": "2026-09-24T04:19:30.706Z"
+      }
+    ],
+    "userEmail": "testuser@example.com",
+    "userIp": "127.0.0.1"
+  },
+  "session_ne4b0cq95tr": {
+    "createdAt": "2026-09-25T07:20:45.427Z",
+    "expiresAt": "2026-10-25T07:20:45.427Z",
+    "id": "session_ne4b0cq95tr",
+    "lastActiveAt": "2026-09-25T07:20:54.571Z",
+    "messages": [],
+    "userIp": "222.165.181.101",
+    "contactInfo": "sampath bandara|wykNr6SIROUT1oewochr5H8AdP22|https://lh3.googleusercontent.com/a/ACg8ocK7qnrpLxdmtMWSYJn_e6HzVnB7P_7DOlPclw6s2VLCtORE7g=s96-c|kasubsampath@gmail.com",
+    "contactType": "google",
+    "userEmail": "kasubsampath@gmail.com"
+  },
+  "session_3k81h9ukued": {
+    "userEmail": "kasubsampath@gmail.com",
+    "id": "session_3k81h9ukued",
+    "expiresAt": "2026-10-25T08:36:39.219Z",
+    "contactInfo": "sampath bandara|PPU5I9Cocvhua07oiYL12MK9Ipi1|https://lh3.googleusercontent.com/a/ACg8ocK7qnrpLxdmtMWSYJn_e6HzVnB7P_7DOlPclw6s2VLCtORE7g=s96-c|kasubsampath@gmail.com",
+    "lastActiveAt": "2026-09-25T08:36:39.218Z",
+    "userIp": "222.165.181.101, 13.215.129.254",
+    "contactType": "google"
+  }
+}

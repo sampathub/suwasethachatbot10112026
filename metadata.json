@@ -1,0 +1,6 @@
+{
+  "name": "Suwasetha Sex & Reproductive Health Guide",
+  "description": "A secure, private, anonymous, and culturally informed Sinhala chatbot web application built for Sri Lankan youth to seek accurate, scientific advice regarding sexual health, intimacy, relationships, and contraception without judgment or stigma.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

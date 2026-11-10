@@ -1,0 +1,131 @@
+{
+  "entities": {
+    "session": {
+      "title": "Chat Session",
+      "description": "A single anonymous chat session containing conversation history and expiration metadata.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique session identifier"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of session creation"
+        },
+        "lastActiveAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of the last message sent in this session"
+        },
+        "expiresAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when this session should be automatically cleaned up (30 days after creation)"
+        },
+        "messages": {
+          "type": "array",
+          "description": "List of messages in the conversation"
+        },
+        "contactInfo": {
+          "type": "string",
+          "maxLength": 2000,
+          "description": "User's contact details, Google user profile string, or Sri Lankan WhatsApp phone number"
+        },
+        "contactType": {
+          "type": "string",
+          "enum": ["telegram", "whatsapp", "facebook", "google", "username"],
+          "description": "Type of contact info provided"
+        },
+        "userEmail": {
+          "type": "string",
+          "maxLength": 320,
+          "description": "User's email address from Google Auth or contact submission"
+        },
+        "userIp": {
+          "type": "string",
+          "maxLength": 100,
+          "description": "Client IP address"
+        },
+        "directContactNumber": {
+          "type": "string",
+          "maxLength": 100,
+          "description": "User-provided direct telephone or WhatsApp number"
+        },
+        "needsAdminAttention": {
+          "type": "boolean",
+          "description": "True if user requested personal support/notification from the admin"
+        },
+        "adminNotifiedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when the user triggered admin notification"
+        }
+      },
+      "required": ["id", "createdAt", "lastActiveAt", "expiresAt", "messages"]
+    },
+    "user": {
+      "title": "Registered / Verified User",
+      "description": "Information about users who verified their age or logged in with Google Authentication or Username.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "User UID from Google Auth or Username Auth"
+        },
+        "email": {
+          "type": "string",
+          "maxLength": 320,
+          "description": "User's verified Google email address or username identifier"
+        },
+        "displayName": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "User's Google display name or registered username"
+        },
+        "photoURL": {
+          "type": "string",
+          "maxLength": 1000,
+          "description": "User's Google avatar photo URL"
+        },
+        "provider": {
+          "type": "string",
+          "enum": ["google", "facebook", "anonymous", "username"],
+          "description": "Authentication provider"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the user first signed in or verified"
+        },
+        "lastLoginAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the user was last active"
+        },
+        "lastIp": {
+          "type": "string",
+          "maxLength": 100,
+          "description": "Client IP address during login"
+        },
+        "lastSessionId": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Most recent session ID associated with this user"
+        }
+      },
+      "required": ["id", "email", "createdAt", "lastLoginAt"]
+    }
+  },
+  "firestore": {
+    "sessions/{sessionId}": {
+      "schema": "session",
+      "description": "Stores user chat sessions anonymously. Only readable/deletable by admins or updateable anonymously to append messages."
+    },
+    "users/{userId}": {
+      "schema": "user",
+      "description": "Stores verified Google user profiles. Writable by the user themselves upon login, readable and listable by administrators."
+    }
+  }
+}

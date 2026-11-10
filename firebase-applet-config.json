@@ -1,0 +1,12 @@
+{
+  "projectId": "aichatbot-4cf01",
+  "appId": "1:828801121189:web:b68ef64245d5217b4c064c",
+  "apiKey": "AIzaSyDsFAT8qQH4H9Ah9M7t5X38OTus7NMMGac",
+  "authDomain": "aichatbot-4cf01.firebaseapp.com",
+  "databaseURL": "https://aichatbot-4cf01-default-rtdb.asia-southeast1.firebasedatabase.app",
+  "firestoreDatabaseId": "(default)",
+  "storageBucket": "aichatbot-4cf01.firebasestorage.app",
+  "messagingSenderId": "828801121189",
+  "measurementId": "G-F2024EF3LF",
+  "oAuthClientId": "20557849332-845t1fjm8ihq96q0e2unae3rn1a03ioq.apps.googleusercontent.com"
+}
